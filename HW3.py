@@ -80,6 +80,8 @@ class CouponDispenser:
                 self.customer_roster.append(name)
                 self.issued_indices.append(chosen_index)
                 return self.coupon_cards[chosen_index]
+        else:
+            return "The box is empty."
             
 
     def distribute_session(self):
